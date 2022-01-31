@@ -1,0 +1,207 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 528px;
+  height: 581px;
+  padding: 40px 39px 40px 41px;
+
+  transform: translate(-50%, -50%) scale(1);
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form {
+  margin-bottom: 10px;
+}
+
+.modal-comment {
+  margin-bottom: 20px;
+}
+
+.modal__close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--btn-text-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: var(--nav-text-color);
+  }
+}
+
+.modal__title {
+  font-weight: bolder;
+  font-size: 20px;
+  line-height: 100%;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: var(--primary-text-color);
+}
+
+.input-wrap__form {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(117, 117, 117, 0.5);
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius: 4px;
+  padding-left: 42px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    border-color: var(--nav-text-color);
+    outline: none;
+  }
+  &:hover + .input-wrap__icon {
+    fill: var(--nav-text-color);
+  }
+  &:focus + .input-wrap__icon {
+    fill: var(--nav-text-color);
+  }
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.input-wrap__icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translatey(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-comment__text {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(117, 117, 117, 0.5);
+  border-radius: 4px;
+  padding: 16px 12px;
+  resize: none;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    border-color: var(--nav-text-color);
+  }
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.modal-form__text {
+  display: block;
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.01em;
+  color: #757575;
+  margin-bottom: 4px;
+  text-align: left;
+}
+
+.modal-check__box {
+  padding-left: 13px;
+}
+
+.modal-check__icon {
+  position: absolute;
+  left: 13px;
+  top: 50%;
+  transform: translatey(-50%);
+  fill: transparent;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-check__text {
+  position: relative;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &::before {
+    content: "";
+    width: 16px;
+    height: 15px;
+    border-radius: 2px;
+  }
+}
+
+.modal-check__box {
+  margin-right: 10px;
+}
+
+.modal-check__policy:checked + .modal-check__text .modal-check__icon {
+  border: none;
+  background-color: var(--nav-text-color);
+}
+
+.modal-check__policy:checked + .modal-check__text .modal-check__icon {
+  fill: white;
+}
+
+.modal-check__document {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-left: 2px;
+  color: var(--nav-text-color);
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: #188ce8;
+  }
+}
+
+.modal-check__button {
+  padding: 10px 32px;
+  margin-top: 30px;
+
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.875;
+  color: var(--btn-text-color);
+  font-weight: bold;
+  letter-spacing: 0.06em;
+  background: var(--nav-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}

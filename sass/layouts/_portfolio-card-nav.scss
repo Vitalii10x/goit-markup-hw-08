@@ -1,0 +1,25 @@
+.portfolio-card-nav {
+  margin-bottom: 0;
+  padding: 20px 24px;
+  border-top: 0;
+  background: white;
+}
+
+.portfolio-card-name {
+  margin-top: 0;
+  margin-bottom: 4px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-card-theme {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 16px;
+  line-height: 1.875;
+  color: var(--title-text-color);
+}

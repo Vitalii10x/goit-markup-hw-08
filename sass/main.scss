@@ -1,0 +1,40 @@
+// BASE
+@import "./base/common";
+@import "./base/reset";
+
+// COMPONENTS
+@import "./components/container";
+@import "./components/section";
+
+// UTILS
+@import "./utils/vars";
+@import "./utils/hidden";
+@import "./utils/portfolio-name";
+
+// LAYOUTS
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/backdrop";
+@import "./layouts/modal";
+@import "./layouts/work";
+
+@import "./layouts/command";
+@import "./layouts/command-box__name";
+@import "./layouts/command-box__list";
+
+@import "./layouts/social__list";
+@import "./layouts/social__link";
+@import "./layouts/clients";
+
+@import "./layouts/footer";
+@import "./layouts/footer__logo";
+@import "./layouts/footer-adress";
+@import "./layouts/footer-contact";
+@import "./layouts/footer-social";
+@import "./layouts/footer-box";
+
+@import "./layouts/portfolio-button";
+@import "./layouts/portfolio-card";
+@import "./layouts/portfolio-thumb";
+@import "./layouts/portfolio-card-item";
+@import "./layouts/portfolio-card-nav";

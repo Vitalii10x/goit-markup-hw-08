@@ -1,0 +1,23 @@
+.portfolio-projects {
+  margin-top: 54px;
+  padding-bottom: 94px;
+}
+
+.portfolio-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.p-card {
+  text-decoration: none;
+  color: #212121;
+}
+.portfolio-card-item {
+  position: relative;
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #eeeeee;
+  overflow: hidden;
+}
