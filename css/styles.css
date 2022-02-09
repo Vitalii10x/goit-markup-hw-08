@@ -590,14 +590,14 @@
   justify-content: center;
 } */
 
-.command-box__list {
+/* .command-box__list {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
     0px 2px 1px rgb(0 0 0 / 20%);
   padding-bottom: 30px;
   background: #ffffff;
   list-style: none;
-}
+} */
 
 /* .command-box__list:not(:last-child) {
   margin-right: 30px;
@@ -926,7 +926,7 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } */
 
-/* ------------FOOTER SOCIAL-------------- */
+/* $$$$$$$$$$$  FOOTER SOCIAL $$$$$$$$$$$$ */
 
 /* .footer-social {
   display: flex;

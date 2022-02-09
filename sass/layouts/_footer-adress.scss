@@ -1,5 +1,6 @@
 .footer-adress {
   margin-top: 20px;
+  margin-bottom: 60px;
 
   font-family: Roboto;
   font-style: normal;
@@ -7,6 +8,10 @@
   font-size: 14px;
   line-height: 1.7;
   text-decoration: none;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
 .footer-adress__link {
