@@ -16,6 +16,7 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-wrap: wrap;
+    justify-self: start;
   }
 }
 
@@ -27,11 +28,13 @@
   border: 1px solid #eeeeee;
   overflow: hidden;
   margin-bottom: 30px;
+  width: 450px;
   &:last-child {
     margin-bottom: 0;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
     width: calc(100% / 2 - 30px);
     margin-right: 30px;
     &:nth-child(2n) {
@@ -43,6 +46,7 @@
   }
 
   @media screen and (min-width: 1200px) {
+    width: 370px;
     width: calc(100% / 3 - 30px);
     margin-right: 30px;
     &:nth-child(3n) {
